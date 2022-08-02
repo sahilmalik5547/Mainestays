@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maine Stays</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.scss">
+    <!-- bootstrap 4 cdn links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ============data-aos============== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- =========for-video-player============ -->
+    <link href="dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <script src="dist/jquery.mb.YTPlayer.js"></script>
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- fancybox slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav
+        class="navbar navbar-expand-lg sticky-top text-center justify-content-around container-fluid p-0 navbar-dark bg-dark">
+        <a class="navbar-brand nb1" href="index.html"> <img src="./image/logo.png"
+                alt="Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon text-black text-center text-white" style="font-size: 35px;">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around text-center" id="collapsibleNavbar">
+            <a class="navbar-brand nb2" href="index.html"> <img src="./image/logo.png"
+                    alt="Logo"></a>
+
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">About us</a></li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">Our Property<i
+                            class="fa-solid fa-caret-down px-1"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Bayview Vacation Rentals</a>
+                        <a class="dropdown-item" href="#">Marsh Connection</a>
+                        <a class="dropdown-item" href="#">Bessbill Apartment</a>
+                        <a class="dropdown-item" href="#">Cotage By the Cove</a>
+
+                    </div>
+                </li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">Things To Do<i
+                            class="fa-solid fa-caret-down px-1"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Trips/Activities</a>
+                        <a class="dropdown-item" href="#">Recommanded Restaurant</a>
+                    </div>
+                </li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class=" btn bttn m-3">Book Online</button>
+        </div>
+    </nav>
+
+
+    <!-- main-banner -->
+    <section class="main-banner " id="top">
+        <!-- desktop -->
+        <div class="desk">
+            <div class="indexhdr">
+                <div id="wrapper" style="position:relative">
+                    <div id="myPlayer"
+                        style="background: url(images/index/videobg.jpeg); background-size:cover;background-position: 100% 55%; background-repeat:no-repeat; height: 90vh; width: 100%; position: relative;">
+                    </div>
+                    <div id="customElement" class="player"
+                        data-property="{videoURL:'tOZnSAiScgM',containment:'#myPlayer', showControls:false, autoPlay:true, loop:true, mute:true, startAt:127, opacity:1, addRaster:true, quality:'default'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="mob">
+            <div class="indexhdr">
+                <div id="wrapper" style="position:relative">
+                    <div id="myPlayer1"
+                        style="background: url(images/index/videobg.jpeg); background-size:cover;background-position: 100% 55%; background-repeat:no-repeat; height: 60vh; width: 100%; position: relative;">
+                    </div>
+                    <div id="customElement" class="player"
+                        data-property="{videoURL:'I4t4eMX9B7A',containment:'#myPlayer1', showControls:false, autoPlay:true, loop:true, mute:true, startAt:127, opacity:1, addRaster:true, quality:'default'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-content-2 text-center">
+            <p class=" hf1">Maine Stays</p>
+            <p class="hf hf2">Your Home Away From Home</p>
+        </div>
+        <div class="banner-content-1 shadow-lg bg-light p-5">
+            <form action="#" class="form form-row mx-auto justify-content-around">
+                <div class="col-md-6 col-xl-2 py-3">
+                    <label for="1" class="form-control-label">Check In:</label>
+                    <input type="text" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-md-6 col-xl-2 py-3">
+
+                    <label for="2" class="form-control-label">Check Out:</label>
+                    <input type="text" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-md-2 col-xl-1 py-3">
+                    <label for="3" class="form-control-label">Adults:</label>
+                    <input type="number" class="form-control" placeholder="1">
+                </div>
+                <div class="col-md-2 col-xl-1  py-3">
+                    <label for="3" class="form-control-label">Children:</label>
+                    <input type="number" class="form-control" placeholder="1">
+                </div>
+                <div class="col-md-2 col-xl-1 py-3">
+                    <label for="3" class="form-control-label">Rooms:</label>
+                    <input type="number" class="form-control" placeholder="1">
+
+                </div>
+                <div class="col-md-6 col-xl-2 pt-5">
+                    <button class="btn bttn btn-block">Book Now</button>
+                </div>
+            </form>
+        </div>
+        <div class="bookbtn">
+            <a href="#frm-mob"><button class="btn bttn btn-lg">Book Now</button></a>
+        </div>
+
+    </section>
+
+    <!-- about section -->
+    <section class="abt container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-7 p-4 ran2">
+                <div class="abt-banner p-3">
+                    <div class="abt-content-1">
+                    </div>
+                    <div class="abt-content-2 ">
+                        <img src="./image/abt.webp"
+                            alt="photo">
+                    </div>
+                    <div class="abt-content-3 animate__animated animate__pulse animate__infinite p-3">
+                        <h2 class="text-center">25 Years of Service
+                            Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 p-4 ran1">
+                <p class="c1">About our company</p>
+                <h2>Maine Stays Vacation Rentals: Your Home Away from Home.</h2> <br>
+                <h4 class="hf">Southern Maine is a perfect destination for a beach stay. We offer 6 properties in the
+                    Wells/Ogunquit area.</h4> <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio maiores eius ducimus, aspernatur
+                    minima quia mollitia labore? Fugit ipsam reiciendis ex quidem dolorem at nobis, error itaque ullam
+                    eveniet est?</p>
+                <button class="btn bttn btn-lg">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- our property section -->
+    <section class="prop-slider my-5 container" data-aos="fade-up">
+        <h1 class="my-5 text-center hh">Our Property</h1>
+        <div class="swiper swiper-2 ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card shadow-lg p-3">
+                        <div class="card-body p-0">
+                            <img src="./image/1.jpg" alt="photo">
+                        </div>
+                        <div class="card-footer">
+                            <h4 class="text-center hf">
+                                Bayview Vacation Rental
+                            </h4>
+                            <p>$303/Night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-lg p-3">
+                        <div class="card-body p-0">
+                            <img src="./image/1 (1).jpg" alt="photo">
+                        </div>
+                        <div class="card-footer">
+                            <h4 class="text-center hf">
+                                Marsh Connection
+                            </h4>
+                            <p>$262/Night</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-lg p-3">
+                        <div class="card-body p-0">
+                            <img src="./image/1 (2).jpg" alt="photo">
+                        </div>
+                        <div class="card-footer">
+                            <h4 class="text-center hf">
+                                Bessbill Apartment
+                            </h4>
+                            <p>$135/Night</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-lg p-3">
+                        <div class="card-body p-0">
+                            <img src="./image/1 (3).jpg" alt="photo">
+                        </div>
+                        <div class="card-footer">
+                            <h4 class="text-center hf">
+                                Cottage by the Cove
+                            </h4>
+                            <p>$169/Night</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-lg p-3">
+                        <div class="card-body p-0">
+                            <img src="./image/1 (4).jpg" alt="photo">
+                        </div>
+                        <div class="card-footer">
+                            <h4 class="text-center hf">
+                                Historic Garrison House
+                            </h4>
+                            <p>$471/Night</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-lg bttn fi text-white mx-auto d-flex my-3">View Property</button>
+
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".swiper-2", {
+                loop: true,
+                autoplay: true,
+                freeMode: false,
+                breakpoints: {
+                    '100': {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    '600': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '900': {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                },
+
+            });
+        </script>
+    </section>
+
+    <!-- things to do section desktop -->
+    <section class="todo container-fluid px-0 py-5 desk">
+        <h1 class="my-5 text-center hh1">Things To Do</h1>
+        <div class="row no-gutters">
+            <div class="col-lg-6 todo-img">
+                <img src="./image/t1.jpg" alt="photo">
+            </div>
+            <div class="col-lg-6">
+                <div class="todo-txt p-5 shadow-lg todo-txt-r">
+                    <h2 class="hf">Mount Agamenticus (York)</h2> <br>
+                    <p>Mount Agamenticus is a 692 ft high monadnock in the town of York, Maine. The
+                        area surrounding the
+                        summit is a park reservation which provides habitat for wildlife and a venue for recreation. The
+                        greater Agamenticus region covers nearly 30,000 acres (12,000 ha) in the southern maine towns of
+                        Eliot, Ogunquit, South Berwick, Wells and York.</p> <br>
+                    <button class="btn btn-lg">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5 shadow-lg todo-txt-l todo-txt">
+                    <h2 class="float-right hf">Nubble Lighthouse (York)</h2> <br> <br>
+                    <p>Considered to be the "most photographed" lighthouse, this 41-foot conical tower sits on the
+                        summit of Cape Neddick Bubble, a small offshore rocky islet, looking proudly over the Atlantic.
+                    </p>
+                    <button class="btn btn-lg float-right">Learn More</button> <br>
+                </div>
+            </div>
+            <div class="col-lg-6 todo-img">
+                <img src="./image/t2.jpg" alt="photo">
+            </div>
+            <div class="col-lg-6 todo-img">
+                <img src="./image/t3.jpg" alt="photo">
+            </div>
+            <div class="col-lg-6">
+                <div class="todo-txt p-5 shadow-lg todo-txt-r">
+                    <h2 class="hf">Fort Williams State Park</h2> <br>
+                    <p>Maine's oldest lighthouse - and one of the most picturesque and most frequently photographed in
+                        the U.S. - has been in operation since 1791. Although it is closed to the public, you can stop
+                        by the adjacent museum, enjoy the grounds which include a beach, lawns and picnic areas and view
+                        boats entering and leaving the harbor.</p> <br>
+                    <button class="btn btn-lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- things to do section mobile -->
+    <section class="todo container-fluid px-0 py-5 mob">
+        <h1 class="my-5 text-center hh1">Things To Do</h1>
+        <div class="row no-gutters">
+            <div class="col-lg-6 todo-img">
+                <img src="./image/t1.jpg" alt="photo">
+            </div>
+            <div class="col-lg-6">
+                <div class="todo-txt p-5 shadow-lg todo-txt">
+                    <h2 class="hf">Mount Agamenticus (York)</h2> <br>
+                    <p>Mount Agamenticus is a 692 ft high monadnock in the town of York, Maine. The
+                        area surrounding the
+                        summit is a park reservation which provides habitat for wildlife and a venue for recreation. The
+                        greater Agamenticus region covers nearly 30,000 acres (12,000 ha) in the southern maine towns of
+                        Eliot, Ogunquit, South Berwick, Wells and York.</p> <br>
+                    <button class="btn btn-lg">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg-6 todo-txt">
+                <div class="col-lg-6 todo-img p-0">
+                    <img src="./image/t2.jpg" alt="photo">
+                </div>
+
+                <div class="todo-txt p-5 shadow-lg todo-txt">
+                    <h2 class="hf">Nubble Lighthouse (York)</h2> <br>
+                    <p>Considered to be the "most photographed" lighthouse, this 41-foot conical tower sits on the
+                        summit of Cape Neddick Bubble, a small offshore rocky islet, looking proudly over the Atlantic.
+                    </p><br>
+                    <button class="btn btn-lg">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg-6 todo-img">
+                <img src="./image/t3.jpg" alt="photo">
+            </div>
+            <div class="col-lg-6 todo-txt">
+                <div class="todo-txt p-5 shadow-lg todo-txt">
+                    <h2 class="hf">Fort Williams State Park</h2> <br>
+                    <p>Maine's oldest lighthouse - and one of the most picturesque and most frequently photographed in
+                        the U.S. - has been in operation since 1791. Although it is closed to the public, you can stop
+                        by the adjacent museum, enjoy the grounds which include a beach, lawns and picnic areas and view
+                        boats entering and leaving the harbor.</p> <br>
+                    <button class="btn btn-lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews section -->
+    <section class="rev-slider container py-5" data-aos="fade-up">
+        <h1 class="my-5 text-center hh2">Reviews</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide ">
+                    <div class="card">
+                        <div class="card-body text-center p-0">
+                            <h4 class="my-4">Excellent vacation rental!</h4>
+                            <p>The location is very private, but is centrally located to all the things we love in
+                                Wells! Very clean, large shareable space, and Ryan made everything effortless - a great
+                                manager.</p>
+                            <p><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p><i class="fa-solid fa-user"></i><b>Mark K.</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="card">
+                        <div class="card-body text-center p-0">
+                            <h4 class="my-4">Awesome stay, so close to everything</h4>
+                            <p>We thoroughly enjoyed our stay at this new property. It was very clean, perfect for my
+                                family of 4. Our rental property manager was very receptive and wonderful to work with.
+                                We love Wells and it was a great central spot for us. Great views from the deck and a
+                                minute walk from the shops and beach. Thank you!</p>
+                            <p><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p><i class="fa-solid fa-user"></i><b>Michelle L.</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="card">
+                        <div class="card-body text-center p-0">
+                            <h4 class="my-4">Convenient & comfortable</h4>
+                            <p>The perfect size for 1-2 people, and within walking distance of everything I wanted to do
+                                in Ogunquit: Beach, shopping, dining. Quiet and lovely location.</p>
+                            <p><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p><i class="fa-solid fa-user"></i><b>Margaret M.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                freeMode: false,
+                loop: true,
+                autoPlay: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </section>
+
+    <!-- gallery section -->
+    <section class="gall-slider container-fluid py-5" data-aos="fade-up">
+        <div class="swiper swiper-3">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide ">
+                    <div class="card">
+                        <a href="./image/g2.jpg"
+                            data-fancybox="gallery" data-caption="st maarten tours and taxi">
+                            <img src="./image/g1.jpg"
+                                alt="Image Gallery">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <a href="./image/g2.jpg"
+                        data-fancybox="gallery" data-caption="st maarten tours and taxi">
+                        <img src="./image/g1.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+                <div class="swiper-slide ">
+                    <a href="./image/g3.jpg"
+                        data-fancybox="gallery" data-caption="st maarten tours and taxi">
+                        <img src="./image/g3.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".swiper-3", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                breakpoints: {
+                    '100': {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    '700': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '1024': {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                },
+            });
+        </script>
+        <script>
+            // Fancybox Config
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    "slideShow",
+                    "thumbs",
+                    "zoom",
+                    "fullScreen",
+                    "share",
+                    "close"
+                ],
+                loop: true,
+                protect: true
+            });
+        </script>
+    </section>
+
+    <!-- book Now section mobile -->
+    <div class="container form-mob" id="frm-mob">
+        <form action="#" class="form form-row mx-auto justify-content-around py-5">
+            <div class="col-md-6 col-sm-12 py-3">
+                <label for="1" class="form-control-label">Check In:</label>
+                <input type="text" class="form-control" placeholder="Date">
+            </div>
+            <div class="col-md-6 col-sm-12 py-3">
+
+                <label for="2" class="form-control-label">Check Out:</label>
+                <input type="text" class="form-control" placeholder="Date">
+            </div>
+            <div class="col-md-2 col-sm-4 py-3">
+                <label for="3" class="form-control-label">Adults:</label>
+                <input type="number" class="form-control" placeholder="1">
+            </div>
+            <div class="col-md-2 col-sm-4  py-3">
+                <label for="3" class="form-control-label">Children:</label>
+                <input type="number" class="form-control" placeholder="1">
+            </div>
+            <div class="col-md-2 col-sm-4 py-3">
+                <label for="3" class="form-control-label">Rooms:</label>
+                <input type="number" class="form-control" placeholder="1">
+
+            </div>
+            <div class="col-md-6 col-sm-12 pt-5">
+                <button class="btn bttn btn-block">Book Now</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-dark py-5">
+        <div class="row foot mx-auto justify-content-around text-white">
+            <div class="col-md-5 p-4">
+                <img src="./image/logo.png" alt="logo" height="70px"> <br>
+                <p>As an avid international traveler, I’ve been a part of the rental industry from an early age with my
+                    families cottage on Wells Beach. With a degree in business management/ hospitality and over 20 years
+                    in the hotel industry I strive to provide the opportunity for my guests to create lifetime memories
+                    in Maine.</p>
+            </div>
+            <div class="col-md-3 p-4">
+                <h4 class="hf">Usefull Links</h4> <br>
+                <ul class="foot-nav"></a>
+                    <li class="foot-item"> <a href="index.html" class="foot-link">Home</a></li>
+                    <li class="foot-item"> <a href="index.html" class="foot-link">About Us</a></li>
+                    <li class="foot-item"> <a href="index.html" class="foot-link">Attraction</a></li>
+                    <li class="foot-item"> <a href="index.html" class="foot-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 p-4 cont-info">
+                <h4 class="hf">Contact Info</h4> <br>
+                <p><i class="fa-solid fa-phone"></i>PHONE : +91 9100007730/1</p>
+                <p><i class="fa-solid fa-envelope"></i>EMAIL : support@vortexdigitalworld.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>ADDRESS : Ogunquit, Maine, United States
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- fixed -->
+    <a href="#top" class="up"><i class="fa-solid fa-angle-up"></i> </a>
+
+    <!-- data Aos -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var myPlayer;
+        jQuery(function () {
+            var options = {
+                mobileFallbackImage: "https://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg",
+                playOnlyIfVisible: false
+            };
+            myPlayer = jQuery(".player").YTPlayer(options);
+        });
+
+//YT script player Ends----------------------------------
+
+    </script>
+
+</body>
+
+</html>

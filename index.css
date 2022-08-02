@@ -1,0 +1,440 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hf {
+    font-family: 'Lato', sans-serif;
+}
+
+.bttn {
+    background-color: #dca73a !important;
+    color: #fff !important;
+}
+
+.bttn:hover {
+    background-color: #f1b233;
+    color: #fff !important;
+}
+
+.c1 {
+    color: #dca73a;
+}
+
+nav a img {
+    height: 80px;
+    object-fit: cover;
+}
+
+nav .nav-item .nav-link {
+    color: #fff !important;
+}
+
+nav .nav-item .nav-link:hover {
+    color: #dca73a !important;
+}
+
+.main-banner .banner-content-1 input {
+    border: 1px solid #dca73a;
+}
+
+.main-banner .banner-content-2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+}
+
+
+.main-banner .banner-content-2 .hf1 {
+    font-size: 12vh;
+    color: #fff;
+    margin: 0px;
+    font-weight: 900;
+    line-height: 100px;
+}
+
+.main-banner .banner-content-2 .hf2 {
+    font-size: 5vh;
+    color: #fff;
+    margin: 0px;
+    font-weight: 700;
+}
+
+
+.abt .ran2 {
+    width: 100%;
+}
+
+.abt .abt-banner {
+    position: relative;
+    height: 100%;
+}
+
+.abt .abt-banner .abt-content-2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.prop-slider {
+    margin: 12rem;
+}
+
+.prop-slider .card {
+    height: 65vh;
+    border-radius: 10px;
+
+}
+
+.prop-slider .card-body {
+    overflow: hidden;
+}
+
+.prop-slider .card:hover img {
+    transform: scale(1.08);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.prop-slider .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.prop-slider .hh {
+    position: relative;
+    font-weight: 900;
+    font-size: 7vh;
+}
+
+.prop-slider .hh::before {
+    content: "Our Property";
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    width: 100%;
+    color: rgba(17, 46, 65, .031);
+}
+
+.todo .todo-img {
+    height: 75vh;
+}
+
+.todo .todo-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.todo .todo-txt-r {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    top: 50%;
+    z-index: 99;
+
+}
+
+.todo .todo-txt-l {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 70%;
+    top: 50%;
+    z-index: 99;
+}
+
+.todo .todo-txt {
+    height: fit-content;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.todo .todo-txt button {
+    border: 1px solid #dca73a;
+    color: #dca73a;
+}
+
+.todo .todo-txt button:hover {
+    background-color: #dca73a;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.todo .hh1 {
+    position: relative;
+    font-weight: 900;
+    font-size: 7vh;
+}
+
+.todo .hh1::before {
+    content: "Things To Do";
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    width: 100%;
+    color: rgba(17, 46, 65, .031);
+}
+
+.rev-slider .card {
+    border: unset;
+    width: 75%;
+    margin: auto;
+
+}
+
+.rev-slider .hh2 {
+    position: relative;
+    font-weight: 900;
+    font-size: 7vh;
+}
+
+.rev-slider .hh2::before {
+    content: "Reviews";
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    width: 100%;
+    color: rgba(17, 46, 65, .031);
+}
+
+.rev-slider .fa-star {
+    color: gold;
+}
+
+.rev-slider .fa-user {
+    color: #dca73a;
+    padding-right: 10px;
+}
+
+.rev-slider .swiper-button-next,
+.rev-slider .swiper-button-prev {
+    color: #dca73a;
+    padding: 30px !important;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.rev-slider:hover .swiper-button-prev {
+    color: #fff;
+    background-color: #dca73a;
+    border-radius: 50%;
+    transform: translateX(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.rev-slider:hover .swiper-button-next {
+    color: #fff;
+    background-color: #dca73a;
+    transform: translateX(-25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.gall-slider .swiper-slide img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.gall-slider .swiper-button-next,
+.gall-slider .swiper-button-prev {
+    color: #dca73a;
+}
+
+.foot {
+    width: 80%;
+}
+
+footer .foot-nav {
+    padding: 0px;
+}
+
+footer .foot-nav .foot-item {
+    list-style-type: none;
+}
+
+footer .foot-nav .foot-item .foot-link {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+footer .foot-nav .foot-item .foot-link:hover {
+    color: #dca73a !important;
+}
+
+footer .cont-info p i {
+    padding: 10px;
+    color: #dca73a !important;
+}
+
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    padding: 10px 15px;
+    background-color: #f1b233;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.up:hover {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+
+
+@media screen and (min-width:992px) {
+    .nb1 {
+        display: none !important;
+    }
+
+    .mob {
+        display: none;
+    }
+    .abt{
+        margin-top: 12rem;
+    }
+
+    .abt .abt-banner .abt-content-1 {
+        background-color: #dca73a;
+        height: 45vh;
+        width: 25vw;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 170px;
+        right: -150px;
+        border-radius: 10px;
+    }
+
+    .abt .abt-banner .abt-content-2 {
+        height: 50vh;
+        width: 40vw;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 200px;
+        border-radius: 10px;
+    }
+
+    .abt .abt-banner .abt-content-3 {
+        background-color: #000;
+        color: #fff;
+        height: 15vh;
+        width: 20vw;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: 0px;
+        right: 90px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .bookbtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .nb2 {
+        display: none !important;
+    }
+
+    .desk,
+    .up {
+        display: none;
+    }
+    .abt{
+        margin-top: 10rem;
+    }
+    .abt .abt-banner .abt-content-1 {
+        display: none;
+    }
+
+    .abt .abt-banner .abt-content-2 {
+        height: 500px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .abt .abt-banner .abt-content-3 {
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:767px) {
+    .main-banner .banner-content-1 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 85%;
+        left: 50%;
+        width: 70%;
+    }
+
+    .main-banner .bookbtn {
+        display: none;
+    }
+    .form-mob{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+    .main-banner .banner-content-1 {
+        display: none;
+    }
+
+    .main-banner .bookbtn {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 80%;
+        left: 50%;
+    }
+    .main-banner .bookbtn {
+        transition: all 1s ease-in-out;
+    }
+
+
+}
+
+
+.YTPOverlay.raster{ background:none}
+
+.vidcontent{
+
+position: absolute;
+
+top: 45%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+z-index:99;
+
+width:100%;
+
+text-align:center;
+
+}
